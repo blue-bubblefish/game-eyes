@@ -1,0 +1,39 @@
+{
+  "name": "cortico-world-game-eyes",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "给任何游戏配一双眼睛和一只手：列窗口、抓窗口画面、在窗口内点击、发按键。不读游戏内存、不需要编译植入件，所以任何游戏都能上桌。抓屏优先 PrintWindow（窗口被盖住也能抓），抓到全黑就退回屏幕复制。只在 Windows 上跑。",
+  "license": "MIT",
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "game"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "win32"
+  ],
+  "main": "./src/index.ts",
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "游戏之眼",
+    "tags": [
+      "game"
+    ],
+    "describe": "describe.json"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "describe.json",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "cortico": "^0.2.5",
+    "typescript": "^5.7.2"
+  }
+}
